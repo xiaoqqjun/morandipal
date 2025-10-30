@@ -121,7 +121,7 @@ plot_umap <- function(
     pt.size = pt.size,
     repel = repel,
     split.by = split.by,    
-     = ,            
+    ncol = ncol,            
     cols = colors
   )
 
