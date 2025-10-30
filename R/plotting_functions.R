@@ -62,12 +62,12 @@ plot_umap <- function(
     reduction = "umap",
     palette = "gradient_full",
     alpha = 0.8,
-    pt.size = 0.5,
+    pt.size = 0.8,
     label = TRUE,
     label.size = 5,
     repel = TRUE,
     split.by = NULL,      
-    ncol = 2,             
+    ncol = 1,             
     legend.position = "right",
     theme.style = "minimal",
     bg.color = "white",
@@ -121,7 +121,7 @@ plot_umap <- function(
     pt.size = pt.size,
     repel = repel,
     split.by = split.by,    
-    ncol = ncol,            
+     = ,            
     cols = colors
   )
 
@@ -166,7 +166,7 @@ plot_umap <- function(
 #' @param palette Color palette name or list of palettes
 #' @param alpha Transparency level
 #' @param pt.size Point size
-#' @param ncol Number of columns in the plot arrangement
+#' @param  Number of columns in the plot arrangement
 #'
 #' @return A list of ggplot objects
 #'
@@ -186,7 +186,7 @@ plot_umap_interactive <- function(
     palette = "gradient_full",
     alpha = 0.8,
     pt.size = 0.5,
-    ncol = 2) {
+     = 1) {
 
   if (is.null(group.by.list)) {
     stop("group.by.list must be provided")
