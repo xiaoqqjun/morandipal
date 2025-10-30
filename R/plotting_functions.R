@@ -186,7 +186,7 @@ plot_umap_interactive <- function(
     palette = "gradient_full",
     alpha = 0.8,
     pt.size = 0.5,
-     = 1) {
+    ncol = 1) {
 
   if (is.null(group.by.list)) {
     stop("group.by.list must be provided")
