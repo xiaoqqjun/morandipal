@@ -14,8 +14,8 @@ An R package providing publication-quality Morandi-style color palettes optimize
 ## Installation
 
 ```r
-# Install from GitHub (coming soon)
-# remotes::install_github("morandipal/morandipal")
+# Install from GitHub
+# remotes::install_github("xiaoqqjun/morandipal")
 
 # Or build locally
 devtools::load_all()
