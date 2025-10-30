@@ -66,7 +66,8 @@ plot_umap <- function(
     label = TRUE,
     label.size = 5,
     repel = TRUE,
-    label.box = FALSE,
+    split.by = NULL,      
+    ncol = 2,             
     legend.position = "right",
     theme.style = "minimal",
     bg.color = "white",
@@ -74,7 +75,7 @@ plot_umap <- function(
     axis.text.size = 10,
     title = NULL,
     title.size = 14,
-    axis.title.size = 12) {
+    axis.title.size = 12)  {
 
   # Validate inputs
   if (!inherits(object, "Seurat")) {
@@ -119,6 +120,8 @@ plot_umap <- function(
     label.size = label.size,
     pt.size = pt.size,
     repel = repel,
+    split.by = split.by,    
+    ncol = ncol,            
     cols = colors
   )
 
